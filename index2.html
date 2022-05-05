@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+		
+       
+    </head>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <body>
+        <div class="jumbotron">
+			<div class="container-fluid">
+				<h2 id="title">Sorvey Form</h2>
+			</div>
+        </div>
+            <div class="container">
+                <div class="col-sm-12 col-md-12" id="para" >
+                    <p id="description">this sorvey is about your interest to study outsite country and chose everyone you like it. we interest to fine some one that are in our choice, good luck to you.</p>
+                    <hr>
+                </div>
+                <div  class="col-sm-12 col-md-12" id="con">
+                    <form id="survey-form" action="">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="name" id="name-label"  >First Name</label>
+                                <input type="text" id="name" placeholder="please enter your full name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="email" id="email-label">Email</label>
+                                <input type="email"  id="email" placeholder="please enter your email address" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="number" id="number-label">Age</label>
+                                <input id="number" type="number" placeholder="please enter your age" class="form-control" min="18" max="40">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="dropdown">Country</label>
+                                <select name="" class="form-control" id="dropdown"required oninvalid="this.setCustomVlidity('please select one option') " oninput="this.setCustomVlidity('')">
+                                    <option value="">Turkey</option>
+                                    <option value="">Australia</option>
+                                    <option value="">Canada</option>
+                                    <option value="">Bangladesh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="radio">
+                                <label for="female"><input type="radio" id="female" name="gender" checked>Female</label><span>--------------</span>
+                                <label for="male"><input type="radio" id="male" name="gender">Male</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label for="check"><input type="checkbox" id="check"/>i prefer to study in my contry</label>
+                                    <label for="check2"><input type="checkbox" id="check2"/>
+                                        i prefer outsite country</label>
+                                    <label for="check3"><input type="checkbox" id="check3"/>not important to me !</label>
+                                  
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-12 col-dm-12">
+                            <div class="form-group">
+                                <label for="">Any Idia</label>
+                                <textarea name="" id="" cols="30" rows="4" class="form-control" ></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12" >
+                            <button class="btn btn-success" type="submit" id="submit" >submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+		
+    </body>
+</html>
